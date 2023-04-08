@@ -12,11 +12,6 @@
   justify-content: space-evenly;
 }
 
-.work {
-  grid-area: work;
-  padding: 0px 20px;
-}
-
 .worknav li {
   list-style-type: none;
   padding: 20px 10px;
@@ -34,4 +29,22 @@
   color: var(--highlights);
   border: 1px var(--highlights) solid;
   background-color: var(--main-sub-color);
+}
+
+.work {
+  grid-area: work;
+  padding: 0px 20px;
+}
+.work ul {
+  padding-left: 20px;
+}
+.work li {
+  padding: 10px 0px;
+}
+.work p {
+  color: var(--font-sub-color);
+  margin: 0;
+}
+.work h2 {
+  margin: 0;
 }
