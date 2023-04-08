@@ -16,7 +16,7 @@ span {
 
 .about-highlight {
   grid-area: high;
-  font-size: clamp(60px, 4vw, 3rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   margin: 0;
 }
 
