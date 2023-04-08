@@ -1,0 +1,37 @@
+.works {
+  display: grid;
+  grid-template-areas: 'worknav work work';
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 800px;
+}
+
+.worknav {
+  grid-area: worknav;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.work {
+  grid-area: work;
+  padding: 0px 20px;
+}
+
+.worknav li {
+  list-style-type: none;
+  padding: 20px 10px;
+  border: 1px var(--main-bg-color) solid;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.worknav li:hover {
+  color: var(--highlights);
+  cursor: pointer;
+}
+
+.worknav li.selected {
+  color: var(--highlights);
+  border: 1px var(--highlights) solid;
+  background-color: var(--main-sub-color);
+}

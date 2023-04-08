@@ -1,0 +1,63 @@
+:root,
+body,
+#root {
+  --main-bg-color: #222831;
+  --main-sub-color: #393e46;
+  --highlights: #00adb5;
+  --font-color: #eeeeee;
+  --font-sub-color: #a8abb1;
+
+  --default-m: 30px;
+
+  --btn-p: 8px 22px;
+  --body-p: 10px 22px;
+
+  background-color: var(--main-bg-color);
+  color: var(--font-color);
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'navbar navbar navbar'
+    'main main main'
+    'footer footer footer';
+  grid-template-rows: 50px 1fr 50px;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 30px;
+}
+.navbar-right {
+  justify-content: flex-end;
+}
+.navlink {
+  text-decoration: none;
+  color: var(--font-color);
+  margin: var(--btn-p);
+}
+.navlink:hover {
+  color: var(--highlights);
+}
+
+.works,
+.about {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+  padding: 30px;
+  max-width: 800px;
+}
+
+.footer {
+  grid-area: footer;
+  align-self: center;
+  justify-self: center;
+}
