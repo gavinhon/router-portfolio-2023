@@ -46,10 +46,7 @@ function WorkNav({ setSelected }) {
     setSelected(item);
     setSelectedItem(item);
   }
-  useEffect(() => {
-    setSelected(items[0]);
-    setSelectedItem(items[0]);
-  }, [items]);
+
   return (
     <div className='worknav'>
       <ul>
